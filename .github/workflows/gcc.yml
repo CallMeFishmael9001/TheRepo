@@ -24,4 +24,4 @@ jobs:
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       shell: bash
-      run: ls
+      run: ./build.sh
