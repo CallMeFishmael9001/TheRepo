@@ -1,6 +1,6 @@
 mkdir build
 pushd build
 
-cl ..\main.c
+cl \WX \W4 ..\main.c
 
 popd
