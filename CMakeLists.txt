@@ -1,3 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 project(TheRepo)
 add_executable(hello main.c)
+
+if (MSVC)
+  add_compile_options(/W4 /WX)
+  add_link_options(/W4 /WX)
+endif()
