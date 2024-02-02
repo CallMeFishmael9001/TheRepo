@@ -29,5 +29,6 @@ jobs:
       uses: ilammy/msvc-dev-cmd@v1.4.1
       
     - name: Build 
-      run: cl main.c
+      shell: cmd
+      run: build.bat
       working-directory: ${{env.GITHUB_WORKSPACE}}
